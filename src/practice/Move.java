@@ -1,5 +1,5 @@
 package practice;
 
-public enum Moves {
+public enum Move {
 	ROCK, PAPER, SCISSORS, R, P, S
 }
