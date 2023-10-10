@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		System.out.println(Moves.PAPER.toString().toLowerCase());
 		// trying to make a rock paper scissors game
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
@@ -26,8 +27,8 @@ public class Main {
 	}
 
 	public static boolean validatePlayerMove(String playerMove) {
-		if (playerMove.equals("rock") || playerMove.equals("paper") || playerMove.equals("scissors")
-				|| playerMove.equals("r") || playerMove.equals("p") || playerMove.equals("s")) {
+		if (playerMove == Moves.ROCK.toString() || playerMove == Moves.PAPER.toString() || playerMove == Moves.SCISSORS.toString()
+				|| playerMove == Moves.R.toString() || playerMove.equals("p") || playerMove.equals("s")) {
 			return true;
 		}
 		return false;
