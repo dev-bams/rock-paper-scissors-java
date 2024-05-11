@@ -65,16 +65,16 @@ public class Main {
         if ((computerMove.equals(Move.SCISSORS.toString())
                 && (playerMove.equals(Move.PAPER.toString()) || playerMove.equals(Move.P.toString())))
                 || (computerMove.equals(Move.ROCK.toString())
-                && (playerMove.equals(Move.SCISSORS.toString()) || playerMove.equals(Move.S.toString())))
+                        && (playerMove.equals(Move.SCISSORS.toString()) || playerMove.equals(Move.S.toString())))
                 || (computerMove.equals(Move.PAPER.toString())
-                && (playerMove.equals(Move.ROCK.toString()) || playerMove.equals(Move.R.toString())))) {
+                        && (playerMove.equals(Move.ROCK.toString()) || playerMove.equals(Move.R.toString())))) {
             return Outcome.lOSE.toString() + " :(";
         } else if (((playerMove.equals(Move.SCISSORS.toString()) || playerMove.equals(Move.S.toString()))
                 && computerMove.equals(Move.PAPER.toString()))
                 || ((playerMove.equals(Move.ROCK.toString()) || playerMove.equals(Move.R.toString()))
-                && computerMove.equals(Move.SCISSORS.toString()))
+                        && computerMove.equals(Move.SCISSORS.toString()))
                 || ((playerMove.equals(Move.PAPER.toString()) || playerMove.equals(Move.P.toString()))
-                && computerMove.equals(Move.ROCK.toString()))) {
+                        && computerMove.equals(Move.ROCK.toString()))) {
             return Outcome.WIN.toString() + " :)";
         } else {
             return Outcome.DRAW.toString();
